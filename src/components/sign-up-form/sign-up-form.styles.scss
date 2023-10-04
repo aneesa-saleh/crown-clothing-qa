@@ -1,0 +1,27 @@
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+
+  h2 {
+    margin: 10px 0;
+  }
+}
+
+.form-error {
+  color: red;
+  font-weight: 500;
+  font-size: 1.3em;
+  display: inline-block;
+  margin-bottom: 10px;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+}
+
+.no-bottom-margin {
+  margin-bottom: 0 !important;
+}
