@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "BROWSER=none react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
-    "serve": "serve -l 3000 build",
+    "serve": "node index.js",
     "start-and-run-cypress": "start-server-and-test serve http://localhost:3000 cypress:run",
     "start-and-open-cypress": "start-server-and-test serve http://localhost:3000 cypress:open"
   },
@@ -17,6 +17,7 @@
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/react": "12.1.2",
     "@testing-library/user-event": "13.5.0",
+    "express": "^4.18.2",
     "firebase": "9.6.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -36,7 +37,6 @@
     "cypress": "^13.3.0",
     "eslint": "^8.50.0",
     "eslint-plugin-cypress": "^2.15.1",
-    "serve": "^14.2.1",
     "start-server-and-test": "^2.0.1",
     "typescript": "^5.2.2"
   },
