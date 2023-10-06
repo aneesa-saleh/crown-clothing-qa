@@ -28,3 +28,7 @@ attachCustomCommands({ Cypress, cy, firebase });
 Cypress.Commands.add('loginWithGoogle', () => {
     return cy.login(Cypress.env('GOOGLE_USER_UID'))
 })
+
+Cypress.Commands.add('loginWithEmail', () => {
+    return cy.login(Cypress.env('EMAIL_USER_UID'))
+})
